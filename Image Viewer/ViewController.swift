@@ -18,6 +18,14 @@ class ViewController: UITableViewController {
         title = "Image Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        performSelector(inBackground: #selector(fetchData), with: nil)
+        
+        tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
+        
+        var picturesSorted = pictures.sort()
+    }
+    
+    @objc func fetchData() {
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
@@ -27,7 +35,7 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
-        var picturesSorted = pictures.sort()
+        
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count
