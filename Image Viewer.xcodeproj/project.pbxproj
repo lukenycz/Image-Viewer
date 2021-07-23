@@ -86,14 +86,6 @@
 				103343E526872E0400E57A97 /* Assets.xcassets */,
 				103343E726872E0400E57A97 /* LaunchScreen.storyboard */,
 				103343EA26872E0400E57A97 /* Info.plist */,
-				1033441D26873E4100E57A97 /* Content */,
-			);
-			path = "Image Viewer";
-			sourceTree = "<group>";
-		};
-		1033441D26873E4100E57A97 /* Content */ = {
-			isa = PBXGroup;
-			children = (
 				1033441E26873E4100E57A97 /* nssl0049.jpg */,
 				1033441F26873E4100E57A97 /* nssl0046.jpg */,
 				1033442026873E4100E57A97 /* nssl0091.jpg */,
@@ -104,6 +96,14 @@
 				1033442526873E4100E57A97 /* nssl0043.jpg */,
 				1033442626873E4100E57A97 /* nssl0033.jpg */,
 				1033442726873E4100E57A97 /* nssl0034.jpg */,
+				1033441D26873E4100E57A97 /* Content */,
+			);
+			path = "Image Viewer";
+			sourceTree = "<group>";
+		};
+		1033441D26873E4100E57A97 /* Content */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Content;
 			sourceTree = SOURCE_ROOT;
